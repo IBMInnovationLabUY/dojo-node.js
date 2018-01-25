@@ -1,0 +1,20 @@
+.form{
+    display: block;
+    margin: 2%;
+}
+#div_one_message{
+    display: block;
+}
+#name{
+    font-weight: bold;
+    width: 10%;
+    display: inline-block
+}
+#text{
+    font-style: italic;
+    display: inline-block;
+    width: 83%
+}
+p{
+    margin: 0
+}
