@@ -1,6 +1,6 @@
 const os = require('os');
 const fs = require('fs');
-const mm = require('./mi_modulo.js'); 
+//const mm = require('./mi_modulo.js'); 
 
 let platform = os.platform();
 console.log(platform);
