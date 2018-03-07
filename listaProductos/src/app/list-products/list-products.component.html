@@ -1,0 +1,29 @@
+<div class="container">
+    <h1 id="titulo">Products list</h1>
+    <a id = "boton_nuevo" [routerLink]="['/product-create']" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+    </a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.description }}</td>
+        <div class="row">
+          <div class="col-md-12">
+            <a [routerLink]="['/product-edit', product._id]" class="btn btn-success">EDIT</a>
+            <a [routerLink]="['/product-details', product._id]" class="btn btn-danger">DELETE</a>
+          
+          </div>
+        </div>
+      </tr>
+    </tbody>
+  </table>
+</div>

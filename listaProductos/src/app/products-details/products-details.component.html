@@ -1,0 +1,18 @@
+<div id="div_mayor">
+  <div class="container">
+    <h1>{{ product.name }}</h1>
+    <dl class="list">
+      <dt>Price</dt>
+      <dd>{{ product.price }}</dd>
+      <dt>Description</dt>
+      <dd>{{ product.description }}</dd>
+    </dl>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button [routerLink]="['/products']" class="btn btn-success">OK</button>
+      <a [routerLink]="['/product-edit', product._id]" class="btn btn-success">EDIT</a>
+      <button class="btn btn-danger" type="button" (click)="deleteProduct(product._id)">DELETE</button>
+    </div>
+  </div>
+</div>

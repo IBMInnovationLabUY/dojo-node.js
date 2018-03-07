@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+/**
+ * Dependencias
+ */
+
+var app = require('../app');
+var http = require('http');
+
+app.set('port', process.env.PORT || '3000');
+
+/**
+ * Creamos servidor HTTP.
+ */
+
+var server = http.createServer(app);
+
+/**
+ * Indicamos que el servidor escuchara en el puerto brindado.
+ */
+
+server.listen(app.get('port'));
